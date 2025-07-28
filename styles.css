@@ -1,0 +1,117 @@
+@font-face {
+    font-family: "Cousine";
+    src: url("https://fonts.googleapis.com/css?family=Cousine");
+}
+
+@media (max-width: 768px) {
+    h1 {
+        padding-right: 0.75em;
+    }
+    .albumwrapper {
+        flex-wrap: wrap;
+    }
+
+    .albumwrapper {
+        flex-direction: column;
+    }
+    .coverwrapper {
+        min-width: 100%;
+    }
+
+    .tracklist {
+        min-width: 100%;
+        padding-left: 0;
+    }
+}
+
+body {
+    font-family: "Cousine", "Courier New", Courier, monospace;
+    color:antiquewhite; 
+    background: black;
+}
+
+h1 {
+    color: crimson;
+    padding-right: 1.5em;
+}
+
+h2 {
+    color: crimson;
+}
+
+h2 > a {
+    color: crimson;
+}
+
+.container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.titlewrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: baseline;
+    border-bottom: 1px solid crimson;
+}
+
+.albumwrapper {
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    align-items: start;
+}
+
+.coverwrapper {
+    width: 55%;
+}
+
+.albumcover {
+    width: 100%;
+    padding-bottom: 4%;
+}
+
+.tracklist {
+    width: 45%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.tracklist > li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: baseline;
+    padding-bottom: 12px;
+}
+
+li > p {
+    margin: 0;
+}
+
+li > a > p {
+    margin: 0;
+    color: antiquewhite;
+}
+
+a {
+    text-decoration: none;
+}
+
+li > a:hover {
+    text-decoration: underline;
+    text-decoration-color: antiquewhite;
+}
+
+.titlewrapper a:hover {
+    text-decoration: underline;
+    text-decoration-color: crimson;
+}
+
